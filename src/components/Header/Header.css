@@ -31,7 +31,6 @@
 .header__nav {
   display: flex;
   gap: 28px;
-  display: none;
 }
 
 .header__nav a {
@@ -82,8 +81,9 @@
 }
 
 @media (max-width: 640px) {
-  .header {
+  .header__nav {
     padding: 0 16px;
+    display: none;
   }
 }
 
