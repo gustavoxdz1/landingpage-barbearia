@@ -1,0 +1,136 @@
+.contact {
+  padding: 80px 40px 100px;
+  background: #020617;
+  color: #f9fafb;
+}
+
+.contact__header {
+  max-width: 640px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.contact__header h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.contact__header p {
+  color: #9ca3af;
+  font-size: 0.98rem;
+}
+
+/* layout */
+
+.contact__content {
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.contact__info {
+  background: radial-gradient(circle at top left, #111827 0, #020617 55%);
+  border-radius: 20px;
+  padding: 24px 22px;
+  border: 1px solid #111827;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.contact__info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.contact__label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #9ca3af;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+.contact__text {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.contact__whatsapp {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #22c55e;
+  text-decoration: none;
+}
+
+.contact__whatsapp:hover {
+  color: #4ade80;
+}
+
+/* botões */
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.contact__primary,
+.contact__secondary {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact__primary {
+  background: #22c55e;
+  color: #022c22;
+}
+
+.contact__primary:hover {
+  background: #16a34a;
+}
+
+.contact__secondary {
+  border: 1px solid #4b5563;
+  color: #e5e7eb;
+}
+
+.contact__secondary:hover {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+/* mapa */
+
+.contact__map-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid #020617;
+}
+
+.contact__map {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: 0;
+}
+
+/* responsivo */
+
+@media (max-width: 960px) {
+  .contact {
+    padding: 60px 20px 80px;
+  }
+
+  .contact__content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__map {
+    min-height: 260px;
+  }
+}
